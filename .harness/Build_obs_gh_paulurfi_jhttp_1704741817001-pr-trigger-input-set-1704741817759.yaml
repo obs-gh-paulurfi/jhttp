@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_obs_gh_paulurfi_jhttp_1704741817001-pr-trigger-input-set
+  identifier: Build_obs_gh_paulurfi_jhttp_1704741817001prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: PMU_Harness_Java_Lab
+  pipeline:
+    identifier: Build_obs_gh_paulurfi_jhttp_1704741817001
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
