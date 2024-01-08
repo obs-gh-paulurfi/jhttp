@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_obs_gh_paulurfi_jhttp_1704741817001-push-trigger-input-set
+  identifier: Build_obs_gh_paulurfi_jhttp_1704741817001pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: PMU_Harness_Java_Lab
+  pipeline:
+    identifier: Build_obs_gh_paulurfi_jhttp_1704741817001
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
