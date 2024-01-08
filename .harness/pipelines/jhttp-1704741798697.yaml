@@ -29,10 +29,12 @@ pipeline:
                       tags: latest
                   timeout: ""
                   type: Plugin
-          platform:
-            os: Linux
-            arch: Amd64
-          runtime:
-            type: Cloud
-            spec: {}
+          infrastructure:
+            type: KubernetesDirect
+            spec:
+              connectorRef: PMU_Harness_SE_Lab_Java_K8s
+              namespace: harness-lab-cicd
+              automountServiceAccountToken: true
+              nodeSelector: {}
+              os: Linux
         type: CI
